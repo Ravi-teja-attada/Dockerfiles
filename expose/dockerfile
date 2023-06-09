@@ -1,0 +1,5 @@
+FROM openjdk:11
+LABEL author="DevOps"
+RUN wget https://spring-bucket01.s3.amazonaws.com/drop.zip
+EXPOSE 8080
+CMD [ "java", "-jar", "drop.zip" ]
